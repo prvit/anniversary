@@ -1,0 +1,1 @@
+angular.module('anniversary.component.grid-isotope', []);

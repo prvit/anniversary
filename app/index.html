@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="anniversary">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <title>Anniversary</title>
+</head>
+<body>
+
+<div ng-controller="GridController">
+    <anniversary-grid-isolate config="gridConfig"></anniversary-grid-isolate>
+</div>
+
+<!--libs-->
+<script src="bower_components/lodash/lodash.js"></script>
+<script src="bower_components/isotope/dist/isotope.pkgd.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+
+<!--application-->
+<!--modules-->
+<script src="scripts/anniversary.module.js"></script>
+<script src="scripts/components/grid-isotope/grid-isotope.module.js"></script>
+<!--controllers-->
+<script src="scripts/controllers/grid.controller.js"></script>
+
+<!--directives-->
+<script src="scripts/components/grid-isotope/grid-isotope.directive.js"></script>
+</body>
+</html>

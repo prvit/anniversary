@@ -1,0 +1,8 @@
+anniversary-grid-isolate {
+  display: block;
+}
+anniversary-grid-isolate .grid-item {
+  width: 25%;
+  border: 1px solid silver;
+  overflow: hidden;
+}

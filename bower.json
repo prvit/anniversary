@@ -1,0 +1,9 @@
+{
+  "name": "Vendors",
+  "dependencies": {
+    "angular": "1.4.6",
+    "isotope": "latest",
+    "angular-animate": "latest",
+    "lodash": "latest"
+  }
+}

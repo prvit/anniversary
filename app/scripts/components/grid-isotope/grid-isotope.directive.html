@@ -1,0 +1,18 @@
+<div class="grid-isolate-filters">
+    <ul>
+        <li ng-click="filterHandler(filter)" ng-repeat="filter in config.filters">
+            {{filter.title}}
+        </li>
+    </ul>
+</div>
+<div class="grid">
+    <div ng-repeat="element in config.elements" data-id="{{element.id}}" class="grid-item">
+        <img src="{{element.image}}" alt=""/>
+        <div class="grid-isolate-name">
+            {{element.name}}
+        </div>
+        <div>
+            {{element.filters[config.currentFilter].text}}
+        </div>
+    </div>
+</div>
