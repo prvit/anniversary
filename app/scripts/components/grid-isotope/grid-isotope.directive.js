@@ -12,10 +12,7 @@ angular.module('anniversary.component.grid-isotope').directive('anniversaryGridI
             var iso;
 
             $timeout(function () {
-                iso = new Isotope(element[0].querySelector('.grid'), {
-                    itemSelector: '.grid-item',
-                    layoutMode: scope.config.ui.layoutMode
-                });
+                iso = new Isotope(element[0].querySelector('.grid'), scope.config.ui);
             });
 
             scope.filterHandler = function (filter) {

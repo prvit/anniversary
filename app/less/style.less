@@ -1,1 +1,238 @@
 @import "components/grid-isotope";
+@import "components/styles-reset";
+@import "components/UI-kit-mixins";
+
+.section-wrapper {
+  width: 1200px;
+  .box-sizing(border-box);
+  margin: auto;
+}
+.s-3d-printing {
+  border-bottom: 1px solid #cccccc;
+}
+.s-3d-printing-inner {
+  background: url("../img/3d-printing-banner.png") right bottom no-repeat;
+  min-height: 600px;
+  padding-top: 30px;
+  .logo-inner,
+  .team-inner {
+    padding-bottom: 60px;
+  }
+  .content-inner {
+    padding-right: 600px;
+    text-align: center;
+    color: #005a8b;
+  }
+  h2 {
+    font-size: 38px;
+    padding-bottom: 10px;
+  }
+  .we-change-world {
+    font-size: 26px;
+    padding-bottom: 140px;
+  }
+  .logo-inner {}
+}
+
+.s-isotope {
+
+}
+
+.s-idea-description {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+.s-idea-description-inner {
+  text-align: center;
+  padding: 20px 10%;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.s-team-years {
+  background: #fafafa;
+  padding: 70px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0 auto 80px;
+  width: 60%;
+}
+
+
+.b-team-years-chat {
+  background: url("../img/team-years-chat.png") center left no-repeat;
+  padding-left: 500px;
+  min-height: 300px;
+  margin: 30px 0;
+  text-align: left;
+}
+
+.b-team-members-from-other {
+  background: url("../img/team-from-other-projects.png") center right no-repeat;
+  padding-right: 460px;
+  min-height: 300px;
+  margin: 30px 0;
+  text-align: right;
+}
+
+.s-team-families {
+  background: url("../img/bg_lines2.png") repeat scroll 0 0;
+  padding-left: 500px;
+  min-height: 300px;
+  padding: 70px 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
+
+  .data-description {
+    margin: 40px auto 100px;
+    width: 600px;
+  }
+}
+.b-married-peoples,
+.children-amount {
+  text-align: center;
+  margin-left: -23px;
+  .col {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .married-data-inner,
+  .vs {
+    padding: 0 60px;
+  }
+  .data-description {
+    padding-left: 30px;
+  }
+  .vs {
+    font-size: 40px;
+  }
+  .children-1,
+  .children-2 {
+    img {
+      padding-bottom: 22px;
+      height: 250px;
+    }
+  }
+}
+
+
+.b-married-peoples {
+  margin-left: -23px;
+}
+
+.children-amount {
+  margin-left: -105px;
+}
+.team-children-data {
+  text-align: center;
+  img {
+    height: 250px;
+  }
+}
+
+.s-languages {
+  background-color: #c7fff4;
+  text-align: center;
+  padding: 70px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) inset;
+  .col {
+    display: inline-block;
+  }
+  .sentence {
+    font-size: 30px;
+    font-style: italic;
+    padding-bottom: 22px;
+  }
+}
+
+.s-devices {
+  background: #a5c63b;
+  min-height: 80px;
+  padding: 70px 0;
+}
+.s-devices-inner {
+  background: url("../img/devices-bg.jpg") left center no-repeat;
+  padding-left: 360px;
+  min-height: 300px;
+}
+
+.s-rendering {
+  background: #42433e;
+  min-height: 80px;
+  padding: 70px 0;
+}
+.s-rendering-inner {
+  background: url("../img/rendering-bg.jpg") left center no-repeat;
+  padding-left: 360px;
+  min-height: 450px;
+}
+
+.s-investment {
+  background: url("../img/sell-bg.jpg") center bottom repeat-x #3ab6da;
+  height: 630px;
+  padding: 0 0 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) inset;
+}
+.s-investment-inner {
+  background: url("../img/sell-banner.jpg") right 74px no-repeat;
+  padding-right: 360px;
+  height: 100%;
+}
+
+.s-rewards {
+  padding: 70px 0 0;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
+  .banner-rewards {
+    font-size: 0;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.s-beer {
+  padding: 70px 0;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
+  .section-title {
+    margin-bottom: 40px;
+    width: 50%;
+  }
+  .col {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 45%;
+    &.vs {
+      margin-top: 120px;
+      width: 9%;
+      font-size: 40px;
+      &.empty {
+        margin: 0;
+      }
+    }
+    .banner-inner {
+      height: 280px;
+      padding-bottom: 22px;
+      img {
+        max-height: 100%;
+      }
+      &.grechka {
+        max-height: 90%;
+      }
+      &.beer {
+        display: inline-block;
+        margin-left: -55px;
+      }
+    }
+    .description {
+      padding-bottom: 22px;
+    }
+  }
+}

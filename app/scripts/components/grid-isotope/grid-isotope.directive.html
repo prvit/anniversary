@@ -6,7 +6,8 @@
     </ul>
 </div>
 <div class="grid">
-    <div ng-repeat="element in config.elements" data-id="{{element.id}}" class="grid-item">
+    <div class="grid-sizer"></div>
+    <div ng-repeat="element in config.elements" data-id="{{element.id}}" class="grid-item {{element.class}}">
         <img src="{{element.image}}" alt=""/>
         <div class="grid-isolate-name">
             {{element.name}}

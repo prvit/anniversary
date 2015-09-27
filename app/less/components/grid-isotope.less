@@ -1,9 +1,22 @@
 anniversary-grid-isolate {
   display: block;
 
-  .grid-item {
-    width: 25%;
-    border: 1px solid silver;
-    overflow: hidden;
+  .grid-item,
+  .grid-sizer {
+    width: 20%;
   }
+
+  .grid-item {
+    float: left;
+    background: #0D8;
+    border: 2px solid #333;
+    border-color: hsla(0, 0%, 0%, 0.7);
+    img {
+      width: 100%;
+    }
+  }
+
+  .grid-item--width2 { width: 40%; }
+  .grid-item--height2 { height: 200px; }
+
 }
