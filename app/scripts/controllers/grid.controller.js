@@ -170,9 +170,6 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                     0: {
                         text: 'Team Leader'
                     },
-                    3: {
-                        text: '4 languages'
-                    },
                     6: {
                         text: ' '
                     },
