@@ -3,10 +3,9 @@ angular.module('anniversary').controller('GridController', function ($scope) {
         currentFilter: 0,
         ui: {
             itemSelector: '.grid-item',
-            percentPosition: true,
             layoutMode: 'masonry',
             masonry: {
-                columnWidth: '.grid-sizer'
+                columnWidth: 100
             }
         },
         filters: [
@@ -47,7 +46,6 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                 id: 0,
                 name: 'Taras Matsyk',
                 image: 'img/team_photos/Taras.jpg',
-                class: 'grid-item--width2',
                 filters: {
                     0: {
                         text: 'Software engineer'
@@ -63,7 +61,6 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                     }
                 }
             },
-
             {
                 id: 1,
                 name: 'Wim Verstraeten',
@@ -92,7 +89,6 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                     }
                 }
             },
-
             {
                 id: 2,
                 name: 'Lyudmila Balakleyskaya',
@@ -115,11 +111,9 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                     }
                 }
             },
-
             {
                 id: 3,
                 name: 'Ivanna Kolisnyk',
-                class: 'grid-item--width2',
                 image: 'img/team_photos/Ivanna.jpg',
                 filters: {
                     0: {
@@ -133,7 +127,6 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                     }
                 }
             },
-
             {
                 id: 4,
                 name: 'Olga Naidonova',
@@ -150,7 +143,6 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                     }
                 }
             },
-
             {
                 id: 5,
                 name: 'Dmitriy Lobko',
@@ -170,7 +162,6 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                     }
                 }
             },
-
             {
                 id: 6,
                 name: 'Andrey Kuzmenko',
@@ -212,7 +203,6 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                     }
                 }
             },
-
             {
                 id: 8,
                 name: 'Vladyslav Pokolenko',
@@ -289,7 +279,6 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                     }
                 }
             },
-
             {
                 id: 12,
                 name: 'Sam Vandormael',
@@ -309,7 +298,6 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                     }
                 }
             },
-
             {
                 id: 13,
                 name: 'Bert De Niel',
