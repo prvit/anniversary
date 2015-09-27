@@ -1,6 +1,5 @@
 <div class="section-wrapper">
 <div class="grid-isolate-filters">
-    {{config.currentFilter}}
     <ul>
         <li ng-click="filterHandler(filter)" ng-class="{active: config.currentFilter == filter.id}" ng-repeat="filter in config.filters">
             {{filter.title}}
