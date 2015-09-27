@@ -3,12 +3,18 @@ anniversary-grid-isolate {
 
   .grid-item {
     float: left;
-    border: 1px solid #3d3d3d;
     font-size: 0;
     overflow: hidden;
-    width: 15%;
-    margin-bottom: 10px;
+    width: 297px;
+    margin: 1px;
 
+    &:hover,
+    &.filtered{
+      .grid-item-description {
+        opacity: 1;
+        cursor: default;
+      }
+    }
     &:hover {
       img {
         -ms-transform: scale(1.2);
@@ -16,10 +22,6 @@ anniversary-grid-isolate {
         -moz-transform: scale(1.2);
         -o-transform: scale(1.2);
         transform: scale(1.2);
-      }
-      .grid-item-description {
-        opacity: 1;
-        cursor: default;
       }
     }
     img {
@@ -30,9 +32,9 @@ anniversary-grid-isolate {
       -o-transform: scale(1);
       transform: scale(1);
       webkit-transition: top 3s ease-out,left 3s ease-out,opacity .3s ease-out,-webkit-transform 3s ease-out;
-      -moz-transition: top 3s ease-out,left 3s ease-out,opacity .3s ease-out,-webkit-transform 3s ease-out;
-      -o-transition: top 3s ease-out,left .3s ease-out,opacity .3s ease-out,-webkit-transform 3s ease-out;
-      transition: top 3s ease-out,left 3s ease-out,opacity .3s ease-out,-webkit-transform 3s ease-out;
+      -moz-transition: all 3s;
+      -o-transition: all 3s;
+      transition: all 3s;
     }
 
   }

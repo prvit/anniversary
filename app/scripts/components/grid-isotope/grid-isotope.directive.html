@@ -1,9 +1,11 @@
+<div class="section-wrapper">
 <div class="grid-isolate-filters">
     <ul>
         <li ng-click="filterHandler(filter)" ng-repeat="filter in config.filters">
             {{filter.title}}
         </li>
     </ul>
+</div>
 </div>
 <div class="grid">
     <div ng-repeat="element in config.elements" data-id="{{element.id}}" ng-class="{filtered: config.currentFilter != 0}" class="grid-item {{element.class}}">

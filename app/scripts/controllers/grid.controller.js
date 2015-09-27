@@ -546,6 +546,86 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                     }
                 }
             },
+            {
+                id: 26,
+                name: 'Elena Pushkelia',
+                image: 'img/team_photos/Lena.jpg',
+                filters: {
+                    0: {
+                        text: 'Test Engineer'
+                    },
+                    4: {
+                        text: ' '
+                    },
+                    6: {
+                        text: ' '
+                    },
+                    7: {
+                        text: 'Yes... cube )))'
+                    }
+                }
+            },
+            {
+                id: 27,
+                name: 'Vitaliy Panchenko',
+                image: 'img/team_photos/Vitalik_pan.jpg',
+                filters: {
+                    0: {
+                        text: 'Software enginee'
+                    },
+                    2: {
+                        text: 'about 6 mouth before i.materialise '
+                    },
+                    4: {
+                        text: ' '
+                    }
+                }
+            },
+            {
+                id: 28,
+                name: 'Vladimir Burilko',
+                image: 'img/team_photos/Vova.jpg',
+                filters: {
+                    0: {
+                        text: 'Software enginee'
+                    },
+                    4: {
+                        text: ' '
+                    }
+                }
+            },
+            {
+                id: 29,
+                name: 'Edouard Moens de Hase',
+                image: 'img/team_photos/Edouard.jpg',
+                filters: {
+                    0: {
+                        text: 'Business Developer'
+                    }
+                }
+            },
+            {
+                id: 29,
+                name: 'Fabian Backer',
+                image: 'img/team_photos/Fabian.jpg',
+                filters: {
+                    0: {
+                        text: 'Community Manager'
+                    }
+                }
+            },
+            {
+                id: 29,
+                name: 'Yui Takahara',
+                image: 'img/team_photos/Yui.jpg',
+                filters: {
+                    0: {
+                        text: 'Community Manager'
+                    }
+                }
+            },
+
+
         ]
     }
 });
