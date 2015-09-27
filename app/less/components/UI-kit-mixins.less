@@ -1,0 +1,497 @@
+﻿
+
+// #### Dependences
+//
+// This file have to be imported directly in less file where a mixin is using
+
+
+// Colors
+// ----------------
+//
+// * LESS variable: `@<color-name>`
+// * To use this color as **background-color**: add class `<color-name>-bg`  *(LESS mixin: `.<color-name>-bg`)*
+// * To use this color as **text-color**: add class `<color-name>-txt` *(LESS mixin: `.<color-name>-txt`)*
+//
+//
+// * [Gray colors](#gray-colors)
+// * [Blue colors](#blue-colors)
+// * [Red colors](#red-colors)
+
+
+// Mixins
+// ----------------
+//  With Mixins, save tons of time on applying common properties
+//
+// * [Parametric mixins](#parametric-mixins)
+// * [Nonparametric mixins](#nonparametric-mixins)
+//   * [Fonts](#fonts)
+
+
+// Gray colors 
+// ============
+//
+// * Light gray (#efefef)
+//   * Defaul color for border
+//   * BG-color for unchecked tab
+//   * Text color for placeholders
+//
+//
+// * Medium gray (#CCCCCC)
+//   * Background-color for disabled buttons
+//   * Text color for labels related to disabled checkboxes
+
+
+
+// * Navy gray (#3d3d3d)
+//   * for API pages
+
+//
+// * Dark bluish gray (#5E6A71)
+//   * Defaul text color
+//   * Background-color for graphical elements
+
+//     <div class="color-sample light-grey-bg"> Light gray </div>
+//     <div class="color-sample medium-gray-bg"> Medium gray </div> 
+//     <div class="color-sample dark-bluish-gray-bg"> Dark bluish gray </div>
+
+
+//    <div class="light-gray-txt">
+//      <span class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="extrabold border-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus. </span>
+//    </div>
+
+//    <div class="medium-gray-txt">
+//      <span class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="extrabold border-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus. </span>
+//    </div>
+
+//    <div class="dark-bluish-gray-txt">
+//      <span class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="extrabold border-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus. </span>
+//    </div>
+
+
+
+@light-grey: #efefef;
+.light-grey-txt {color: @light-grey;}
+.light-grey-bg {background-color: @light-grey;}
+
+@light-gray: #efefef;
+.light-gray-txt {color: @light-gray;}
+.light-gray-bg {background-color: @light-gray;}
+
+@gray: #dcdcdc;
+.light-gray-txt {color: @gray;}
+.light-gray-bg {background-color: @gray;}
+
+@grey: #dcdcdc;
+.light-gray-txt {color: @grey;}
+.light-gray-bg {background-color: @grey;}
+
+@medium-gray: #cccccc;
+.medium-gray-txt {color: @medium-gray;}
+.medium-gray-bg {background-color: @medium-gray;}
+
+@navy-gray: #3d3d3d;
+.navy-gray-txt {color: @navy-gray;}
+.navy-gray-bg {background-color: @navy-gray;}
+
+@dark-bluish-gray: #5E6A71;
+@text-grey: #5E6A71;
+.dark-bluish-gray-txt {color: @dark-bluish-gray;}
+.dark-bluish-gray-bg {background-color: @dark-bluish-gray;}
+
+
+
+
+
+// Blue colors 
+// ============
+//
+// * Cerulean blue (#33C7E9)
+//  * Defaul background-color for `button` when mouse over them or it is in focus
+//  * Defaul `link` color 
+//  * `Bread crumbs`: links or text for main pages (*like: shop, materials, creation corner and etc*) 
+//
+//
+// * Vivid cerulean (#00B9E4)
+//   * Defaul background-color for `button`
+//   * Border-color for `txt-input` when mouse over them or it is in focus and for input with successfully validated data 
+//
+//
+// * Dark cerulean blue (#005A8B)
+//   * Defaul link color when mouse over them (`a:hover`) or it is in focus  (`a:focus`) 
+//
+// * Navy blue (#0067ab)
+//   * Color for API pages 
+//
+//     <div class="color-sample cerulean-blue-bg white-txt"> Cerulean blue </div> 
+//     <div class="color-sample vivid-cerulean-bg white-txt"> Vivid cerulean </div>
+//     <div class="color-sample dark-cerulean-blue-bg white-txt"> Dark cerulean blue </div>
+//     <div class="color-sample navy-blue-bg white-txt"> Navy blue </div>
+
+//    <div class="txt-sample cerulean-blue-txt">
+//      <span class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="extrabold border-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus. </span>
+//    </div>
+
+//    <div class="txt-sample vivid-cerulean-txt">
+//      <span class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="extrabold border-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus. </span>
+//    </div>
+
+//    <div class="txt-sample dark-cerulean-blue-txt">
+//      <span class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="extrabold border-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus. </span>
+//    </div>
+
+//    <div class="txt-sample navy-blue-txt">
+//      <span class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="extrabold border-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus. </span>
+//    </div>
+
+
+@cerulean-blue: #33C7E9;
+.cerulean-blue-txt {color: @cerulean-blue;}
+.cerulean-blue-bg {background-color: @cerulean-blue;}
+
+@cyan: #00B9E4;
+@vivid-cerulean: #00B9E4;
+.vivid-cerulean-txt {color: @vivid-cerulean;}
+.vivid-cerulean-bg {background-color: @vivid-cerulean;}
+
+@dark-cerulean-blue: #005A8B;
+.dark-cerulean-blue-txt {color: @dark-cerulean-blue;}
+.dark-cerulean-blue-bg {background-color: @dark-cerulean-blue;}
+
+
+@navy-blue: #0067ab;
+.navy-blue-txt {color: @navy-blue;}
+.navy-blue-bg {background-color: @navy-blue;}
+
+// Red colors 
+// ============
+//
+// * Light red (#D63333)
+//   * Defaul background color for invalid row
+//
+//
+// * Brilliant red (#FFEEEE)
+//   * Defaul color for error messages
+//   * Red button background color when mouse over them or it is in focus
+//
+//
+// * Strong red (#CC0000)
+//   * Defaul color for `error messages`
+//   * `Red button` background color when mouse over them or it is in focus
+//
+
+//     <div class="color-sample light-red-bg white-txt"> Light red </div> 
+//     <div class="color-sample brilliant-red-bg white-txt"> Brilliant red </div> 
+//     <div class="color-sample strong-red-bg white-txt"> Strong red </div>
+
+//    <div class="light-red-txt">
+//      <span class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="extrabold border-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus. </span>
+//    </div>
+
+//    <div class="brilliant-red-txt">
+//      <span class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="extrabold border-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus. </span>
+//    </div>
+
+//    <div class="strong-red-txt">
+//      <span class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus.  </span>
+//      <span class="extrabold border-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus. </span>
+//    </div>
+
+
+
+
+
+@light-red: #ffeeee;
+.light-red-txt {color: @light-red;}
+.light-red-bg {background-color: @light-red;}
+
+@brilliant-red:#D63333;
+.brilliant-red-txt {color: @brilliant-red;}
+.brilliant-red-bg {background-color: @brilliant-red;}
+
+@strong-red: #CC0000;
+.strong-red-txt {color: @strong-red;}
+.strong-red-bg {background-color: @strong-red;}
+
+@orange-red: #ea6554;
+.orange-red-txt {color: @orange-red;}
+.orange-red-bg {background-color: @orange-red;}
+ 
+// Additional colors
+// =================
+//
+// * Default LESS colors: white, black, green, gray, yellow, red   
+
+.white-txt {color: white;}
+.white-bg {background-color: white;}
+
+.black-txt {color: black;}
+.black-bg {background-color: black;}
+
+
+
+
+
+// Parametric Mixins
+// =================
+//
+// Parametric Mixins
+// -----------------
+//
+// Parametric mixins can take arguments, which are variables passed to the block of selectors when it is mixed in.
+// 
+// * `.border-radius(@arguments)` - generates necessary prefixes for browsers
+// * `.box-shadow(@arguments)` - generates necessary prefixes for browsers
+// * `.text-shadow (@arguments)` - generates necessary prefixes for browsers
+// * `.box-sizing (@arguments)` - generates necessary prefixes for browsers
+// * `.border-custom-color (@border-color)` - returns border: 1px solid @border-color;
+// * `.word-wrap (@arguments)` - returns border: 1px solid @border-color;
+// * `.text-overflow(@arguments)` - generates necessary prefixes for browsers;
+// * `.transition-duration (@arguments)` - generates necessary prefixes for browsers
+// * `.gradient-vertical-bottom2top(@color, @start-color, @stop-color)` - vertical gradient, from BOTTOM to TOP
+
+.border-radius (@radius) {
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+}
+.text-shadow (@arguments) {
+    text-shadow: (@arguments);
+}
+.box-sizing (@arguments) {
+    -moz-box-sizing: (@arguments);
+    -webkit-box-sizing: (@arguments);
+    box-sizing: (@arguments);
+}
+
+.border-custom-color (@border-color) {
+    border: 1px solid @border-color;
+}
+
+.box-shadow(@arguments) { 
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+.word-wrap (@arguments) {
+    -ms-word-wrap: (@arguments);
+    word-wrap: (@arguments);
+}
+.text-overflow(@arguments) {
+    -ms-text-overflow : (@arguments);
+    -o-text-overflow : (@arguments);
+    text-overflow: (@arguments);
+}
+
+.transition (@string) {
+  -webkit-transition: @string;
+     -moz-transition: @string;
+       -o-transition: @string;
+          transition: @string;
+}
+
+.transition-duration (@arguments) {
+    -o-transition-duration: @arguments;
+    -webkit-transition-duration: @arguments;
+    -moz-transition-duration: @arguments;
+    transition-duration: @arguments;
+}
+
+.transition-delay (@string: 1s) {
+  -webkit-transition-delay: @string;
+     -moz-transition-delay: @string;
+       -o-transition-delay: @string;
+          transition-delay: @string;
+}
+
+.transform (@arguments) {
+    -webkit-transform: @arguments;
+    -moz-transform:    @arguments;
+    -ms-transform:     @arguments;
+    -o-transform:      @arguments;
+    transform:         @arguments;
+}
+
+.scale (@factor) {
+	-webkit-transform: scale(@factor);
+	-moz-transform: 	 scale(@factor);
+	-ms-transform: 		 scale(@factor);
+	-o-transform: 		 scale(@factor);
+    transform: 		 scale(@factor);
+}
+
+.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+	-webkit-animation: @name @duration @delay @ease;
+	-moz-animation:    @name @duration @delay @ease;
+    -o-animation:     @name @duration @delay @ease;
+    animation:     @name @duration @delay @ease;
+}
+
+.rotate (@deg) {
+	-webkit-transform: rotate(@deg);
+	-moz-transform: 	 rotate(@deg);
+	-ms-transform: 		 rotate(@deg);
+	-o-transform: 		 rotate(@deg);
+    transform:          rotate(@deg);
+}
+.skew (@deg, @deg2) {
+	-webkit-transform:       skew(@deg, @deg2);
+	-moz-transform: 	 skew(@deg, @deg2);
+	-ms-transform: 		 skew(@deg, @deg2);
+	-o-transform: 		 skew(@deg, @deg2);
+    transform:     skew(@deg, @deg2);
+}
+
+.transition (@arguments) {
+	-webkit-transition: @arguments;  
+	-moz-transition: @arguments;
+    -o-transition: @arguments;  
+    transition: @arguments;
+}
+
+.translate (@x, @y:0) {
+	-webkit-transform:  translate(@x, @y);
+	-moz-transform: 	 translate(@x, @y);
+	-ms-transform: 		 translate(@x, @y);
+	-o-transform: 		 translate(@x, @y);
+    transform:     translate(@x, @y);
+}
+.backface-visibility (@arguments) {
+    -webkit-backface-visibility: @arguments;
+    -moz-backface-visibility: @arguments;
+    backface-visibility: @arguments;
+}
+
+.animation(@arguments) {
+    -webkit-animation: (@arguments);
+	-moz-animation: (@arguments);
+	-o-animation: (@arguments);
+	animation: (@arguments);
+}
+
+.gradient-vertical-bottom2top(@color, @start-color, @stop-color) { 
+    background: @color;
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, @start-color),color-stop(1, @stop-color));
+    background: -webkit-linear-gradient(top, @stop-color, @start-color);
+    background: -ms-linear-gradient(top,@start-color,@stop-color);
+    background: -moz-linear-gradient(center bottom,@start-color,@stop-color);
+    background: -o-linear-gradient(top, @start-color,@stop-color);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@start-color, endColorstr=@stop-color,GradientType=0 );
+}
+
+// Nonparametric Mixins
+// =================
+// 
+// * `.default-border ()` - returns border: 1px solid #efefef with radius 5px;
+// * `.link-grey-nodecoration ()` - returns gray (#5e6a71) link without text decoration
+
+.default-border () {
+    border: 1px solid @light-grey;
+    .border-radius(5px);
+}
+
+.link-grey-nodecoration () {
+    color: @text-grey;
+    text-decoration: none;
+    &:hover{
+        color: @cyan;
+}
+}
+
+.shop-block() {
+    background-color: white;
+    border: 1px solid @light-grey;
+    margin-bottom: 20px;
+    position: relative;
+    .border-radius(4px);
+    line-height: 26px;
+}
+
+// Fonts
+// -------
+//
+// * `.ffdefault()`
+// * `.font-size(@font-size in px)`
+// * `.proxima-nova()`
+// * `.light()`
+// * `.regular()`
+// * `.semibold()`
+// * `.bold()`
+// * `.extrabold()`
+// * `.italic()`
+// * `.uppercase()`
+
+@font-face {
+	font-family: 'open_sansregular';
+	src: url('/fonts/opensans-regular-webfont.eot');
+	src: url('/fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/opensans-regular-webfont.woff') format('woff'),
+		 url('/fonts/opensans-regular-webfont.ttf') format('truetype'),
+		 url('/fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');	
+}
+
+@default-font-size: 16;
+
+.font-size (@font-size: @default-font-size) {
+    @rem-size: (@font-size / @default-font-size );
+    font-size: @font-size * 1px;
+    font-size: ~"@{rem-size}rem"; 
+}
+
+.ffdefault() {
+    font-family: 'open_sansregular', sans-serif, arial, helvetica;
+    font-weight: 400;
+	font-style: normal;
+}
+
+.proxima-nova() {
+    font-family: "proxima-nova", sans-serif; //refer for details here: help.typekit.com/customer/portal/articles/6855-Using-multiple-weights-and-styles
+    font-weight: 400;
+	font-style: normal;
+}
+
+.light() {font-weight: 300;}
+.regular() {font-weight: 400;}
+.semibold() {font-weight: 600;}
+.bold() {font-weight: 700;}
+.extrabold() {font-weight: 800;}
+.italic() {font-style: italic;}
+.uppercase() {text-transform:uppercase;}
