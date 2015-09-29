@@ -563,9 +563,6 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                     4: {
                         text: ' '
                     },
-                    6: {
-                        text: ' '
-                    },
                     7: {
                         text: 'Yes... cube )))'
                     }
@@ -643,7 +640,7 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                 }
             },
         {
-                id: 30,
+                id: 31,
                 name: 'Roman Krutko',
                 image: 'img/team_photos/Roma.jpg',
                 filters: {
