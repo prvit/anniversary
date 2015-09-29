@@ -1,204 +1,232 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" ng-app="anniversary">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css"/>
-
     <title>Anniversary</title>
+    <!--<link href='https://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>-->
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="section s-3d-printing">
-    <div class="section-wrapper s-3d-printing-inner">
-        <div class="content-inner">
-            <p class="logo-inner"><img class="logo" src="img/imat-logo.PNG" alt="i.materialise"/></p>
-            <p class="team-inner"><img src="img/team-3d-printing.png" alt=""/></p>
-            <h2>3D Printing</h2>
-            <p class="we-change-world">Will Change the World </p>
-        </div>
-
-    </div>
-</div>
-<div class="section s-isotope">
-    <div class="s-isotope-inner">
-        <div ng-controller="GridController">
-            <anniversary-grid-isolate config="gridConfig"></anniversary-grid-isolate>
+    <div class="section s-3d-printing">
+        <div class="section-wrapper s-3d-printing-inner">
+            <div class="content-inner">
+                <p class="logo-inner"><img class="logo" src="img/imat-logo.PNG" alt="i.materialise" /></p>
+                <p class="team-inner"><img src="img/team-3d-printing.png" alt="" /></p>
+                <h2>3D Printing</h2>
+                <p class="we-change-world">Will Change the World </p>
+            </div>
         </div>
     </div>
-</div>
-<div class="section s-idea-description">
-    <div class="section-wrapper s-idea-description-inner">
-        <div class="idea-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu convallis ipsum, et fermentum ipsum. Integer hendrerit tincidunt dolor nec cursus. Donec eget malesuada elit, eu convallis lorem.
+    <div class="section s-isotope">
+        <div class="s-isotope-inner">
+            <div ng-controller="GridController">
+                <anniversary-grid-isolate config="gridConfig"></anniversary-grid-isolate>
+            </div>
         </div>
     </div>
-</div>
-<div class="section s-team-years">
-    <div class="section-wrapper s-team-years-inner">
-        <div class="section-title">
-            How long we are working in i.materialise team
+    <div class="section s-idea-description">
+        <div class="section-wrapper s-idea-description-inner">
+            <p class="section-title">Hi Team!  </p>
+            <div class="idea-description">
+                <p class="hi">
+                    <b>100 version of i.materialise has been successfully released today.</b>
+                </p>
+                <p class="hi">
+                    Please refer to the official release notes to be aware of the formal outputs.
+                    On this page some interesting (we hope) information about 30 plus 2 team members is gathered.
+                </p>
+                <p class="note">This page is created just for fun. <br /> So, keep a smile on your face and let's take a look more attentively on your teammates</p>
+            </div>
         </div>
-        <div class="b-team-years-chat">
-            some description for this chat
-        </div>
-        <div class="b-team-members-from-other">
-            some description for this chat
-        </div>
-
     </div>
-</div>
-
-<div class="section s-beer">
-
-    <div class="section-wrapper s-beer-inner">
-        <div class="competition">
-            <div>
-                <div class="col">
-                    <div class="section-title">
-                        Beer in Leuven
+    <div class="section s-team-years">
+        <div class="section-wrapper s-team-years-inner">
+            <div class="b-team-years-chat">
+                <div class="section-title">
+                    Let's see how long we are working in i.materialise team
+                </div>
+            </div>
+            <div class="b-team-members-from-other">
+                <div class="legend">Legend:</div>
+                <p><img src="img/team-from-other-projects_legend.png" alt=" " /> - are in bright colors because they are from other projects + in different colors due to a various period of work in i.materialise team</p>
+                <p> <img src="img/team-from-other-projects_legend2.png" alt=" " /> - are translucent because they have never worked on other materialise projects</p>
+            </div>
+        </div>
+    </div>
+    <div class="section s-beer">
+        <div class="section-wrapper s-beer-inner">
+            <div class="competition">
+                <div>
+                    <div class="col">
+                        <div class="section-title">
+                            Beer in Leuven
+                        </div>
+                    </div>
+                    <div class="col vs empty">
+                    </div>
+                    <div class="col">
+                        <div class="section-title">
+                            Ukrainian "grechka"
+                        </div>
                     </div>
                 </div>
-                <div class="col vs empty">
-
-                </div>
-                <div class="col">
-                    <div class="section-title">
-                        Ukrainian "grechka"
-                    </div>
-                </div>
-            </div>
-            <div class="col beer">
-
-                <p class="banner-inner beer"><img src="img/beer-bg.png" alt=" "/></p>
-                <p class="description"><img src="img/team-beer.png" alt=" "/></p>
-                <p>some decription</p>
-            </div>
-            <div class="col vs">
-                VS
-            </div>
-            <div class="col grechka">
-
-                <p class="banner-inner grechka"><img src="img/grechka-bg.png" alt=" "/></p>
-                <p class="description"><img src="img/team-grechkar.png" alt=" "/></p>
-                <p>some decription</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="section s-investment">
-    <div class="section-wrapper s-investment-inner">
-
-    </div>
-</div>
-<div class="section s-rendering">
-    <div class="section-wrapper s-rendering-inner">
-
-    </div>
-</div>
-
-<div class="section s-devices">
-    <div class="section-wrapper s-devices-inner">
-
-    </div>
-</div>
-
-<div class="section s-team-families">
-    <div class="section-wrapper s-team-families-inner">
-        <div class="section-title">
-            Do we married?
-        </div>
-        <div class="b-married-peoples">
-            <div class="col team-married-men-inner">
-                <img src="img/team-married-men.png" alt=""/>
-            </div>
-            <div class="col married-data-inner">
-                <img src="img/married-data.png" alt=""/>
-            </div>
-            <div class="col team-married-women-inner">
-                <img src="img/team-married-women.png" alt=""/>
-            </div>
-            <div class="data-description">
-                <p>some description is here</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu convallis ipsum, et fermentum ipsum. Integer hendrerit tincidunt dolor nec cursus. Donec eget malesuada elit, eu convallis lorem.</p>
-            </div>
-        </div>
-
-        <div class="section-title">
-            Ok! And what about children?
-        </div>
-        <div class="b-team-children">
-            <div class="team-children-data">
-                <img src="img/team-children.png" alt=" "/>
-                <div class="data-description">
-                    <p>some description is here</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu convallis ipsum, et fermentum ipsum. Integer hendrerit tincidunt dolor nec cursus. Donec eget malesuada elit, eu convallis lorem.</p>
-                </div>
-            </div>
-            <div class="children-amount">
-                <div class="col children-2">
-                    <img src="img/family-2-children.png" alt=" "/>
-                    <p>3 person have 2 children</p>
+                <div class="col beer">
+                    <p class="banner-inner beer"><img src="img/beer-bg.png" alt=" " /></p>
+                    <p class="description"><img src="img/team-beer.png" alt=" " /></p>
                 </div>
                 <div class="col vs">
                     VS
                 </div>
-                <div class="col children-1">
-                    <img src="img/family-1-children.png" alt=" "/>
-                    <p>6 person have 1 child</p>
+                <div class="col grechka">
+                    <p class="banner-inner grechka"><img src="img/grechka-bg.png" alt=" " /></p>
+                    <p class="description"><img src="img/team-grechkar.png" alt=" " /></p>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-
-
-<div class="section s-languages">
-    <div class="section-wrapper s-languages-inner">
-        <!--<div class="section-title">Guess, you will be surprised</div>-->
-        <div class="sentence">
-            "Good salary is when you get salary
-            and haven’t spent all money
-            from previous one".
+    <div class="section s-investment">
+        <div class="section-wrapper s-investment-inner">
+            <div class="section-title">Our investments</div>
+            <p>
+                <!--мы настолько верим в 3д печать, что инвестивуем свои средства в нее. 9 человек (около 30% опрошенных) заказывали себе 3д модельку.
+                И таким образом приблизили таргет примерно на 300 евро-->
+                We believe that 3D printing technologies will grow.
+                About 30% of interviewed colleagues have ever made investments in the 3D printing... and a bit (up to 300 euro) helped to reach turnover target
+            </p>
+            <p class="kudos">
+                Kudos for Our Investors!
+            </p>
         </div>
-        <div class="languages">
-            <div class="col banner">
-                <img src="img/languages-banner.png" alt=" "/>
-            </div>
-            <div class="col photo">
-                <img src="img/languages-franky.png" alt=" "/>
+    </div>
+    <div class="section s-rendering">
+        <div class="section-wrapper ">
+            <div class="section-title">When work is inspiration</div>
+            <div class="s-rendering-inner">
+                <img class="rendering-bg" src="img/rendering-bg.jpg" alt="" />
+                <img class="rendering1-bg" src="img/rendering1-bg.jpg" alt="" />
+                <p>
+                    50% (16 of 32) of us had created own 3D model.
+                </p>
+                <p class="bert">
+                    Seems, Bert De Niel is the most inspired designer in i.materialise team.
+                    He has 10 models in our <a href="http://i.materialise.com/shop/designer/bert-de-niel" target="_blank">shop</a>.
+                </p>
+                <p>
+                    <img src="img/bert-designer.png" alt="" />
+                </p>
+                <p class="kudos">
+                    Are you up for the Challenge?
+                </p>
             </div>
         </div>
     </div>
-</div>
-
-
-
-<div class="section s-rewards">
-    <div class="section-wrapper s-reward-inner">
-             <div class="section-title">
-                 Have you ever been rewarded during all period you work in i.materialise team?
-             </div>
-        <div class="banner-rewards">
-            <img src="img/rewards-banner.png" alt=" "/>
+    <div class="section s-devices">
+        <div class="section-wrapper s-devices-inner">
+            <div class="section-title">About preferences </div>
+            <img src="img/device_pref.png" alt=" " />
         </div>
     </div>
-</div>
-<!--libs-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-<script src="bower_components/lodash/lodash.js"></script>
-<script src="bower_components/isotope/dist/isotope.pkgd.js"></script>
-<script src="bower_components/angular/angular.js"></script>
-
-<!--application-->
-<!--modules-->
-<script src="scripts/anniversary.module.js"></script>
-<script src="scripts/components/grid-isotope/grid-isotope.module.js"></script>
-<!--controllers-->
-<script src="scripts/controllers/grid.controller.js"></script>
-
-<!--directives-->
-<script src="scripts/components/grid-isotope/grid-isotope.directive.js"></script>
+    <div class="section s-team-families">
+        <div class="section-wrapper s-team-families-inner">
+            <div class="section-title">
+                Who are married?
+            </div>
+            <div class="b-married-peoples">
+                <div class="col team-married-men-inner">
+                    <img src="img/team-married-men.png" alt="" />
+                </div>
+                <div class="col married-data-inner">
+                    <img src="img/married-data.png" alt="" />
+                </div>
+                <div class="col team-married-women-inner">
+                    <img src="img/team-married-women.png" alt="" />
+                </div>
+                <div class="data-description">
+                    <p><b>30 answers</b> were received</p>
+                    <p>About 53% of interviewed people are married</p>
+                </div>
+            </div>
+            <div class="section-title">
+                Ok! And what about children?
+            </div>
+            <div class="b-team-children">
+                <div class="team-children-data">
+                    <img src="img/team-children.png" alt=" " />
+                    <div class="data-description">
+                        <p>
+                            25% of interviewed mates have at least 1 child
+                        </p>
+                        <p>(6 woomen and 2 men)</p>
+                    </div>
+                </div>
+                <div class="children-amount">
+                    <div class="col children-2">
+                        <img src="img/family-2-children.png" alt=" " />
+                        <p>3 mates have 2 children</p>
+                    </div>
+                    <div class="col vs">
+                        VS
+                    </div>
+                    <div class="col children-1">
+                        <img src="img/family-1-children.png" alt=" " />
+                        <p>5 mates have 1 child</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section s-languages">
+        <div class="section-wrapper s-languages-inner">
+            <div class="sentence">
+                "Good salary is when you get salary
+                and haven’t spent all money
+                from previous one".
+            </div>
+            <div class="languages">
+                <div class="col banner">
+                    <img src="img/languages-banner.png" alt=" " />
+                </div>
+                <div class="col photo">
+                    <img src="img/languages-franky.png" alt=" " />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section s-rewards">
+        <div class="section-wrapper s-reward-inner">
+            <div class="section-title">
+                Have you ever been rewarded during you work in i.materialise team?
+            </div>
+            <div class="banner-rewards">
+                <img src="img/rewards-banner.png" alt=" " />
+            </div>
+        </div>
+    </div>
+    <div class="section s-congrats">
+        <div class="section-wrapper s-congrats-inner">
+            <div class="section-title">P.S. Franky, congrats!!!</div>
+            <p class="ruzhena">
+                Ruzhena, Happy Birthday!
+            </p>
+            <p class="karen">
+                Karen, respect your 10 years at Materialise!
+            </p>
+        </div>
+    </div>
+    <!--libs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
+    <script src="bower_components/isotope/dist/isotope.pkgd.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <!--application-->
+    <!--modules-->
+    <script src="scripts/anniversary.module.js"></script>
+    <script src="scripts/components/grid-isotope/grid-isotope.module.js"></script>
+    <!--controllers-->
+    <script src="scripts/controllers/grid.controller.js"></script>
+    <!--directives-->
+    <script src="scripts/components/grid-isotope/grid-isotope.directive.js"></script>
 </body>
 </html>

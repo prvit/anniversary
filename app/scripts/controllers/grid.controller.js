@@ -157,6 +157,9 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                     7: {
                         text: '50 euro'
                     },
+                    6: {
+                        text: ' '
+                    },
                     8: {
                         text: ' '
                     }
@@ -214,9 +217,6 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                     6: {
                         text: ' '
                     },
-                    7: {
-                        text: '30 euro'
-                    },
                     8: {
                         text: ' '
                     }
@@ -234,7 +234,7 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                         text: ' '
                     },
                     8: {
-                        text: 'At least 1 for Nazar'
+                        text: ' '
                     }
                 }
             },
@@ -257,6 +257,9 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                     },
                     6: {
                         text: 'Yes and has child'
+                    },
+                    8: {
+                        text: ' '
                     }
                 }
             },
@@ -427,7 +430,7 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                         text: 'Yes and has 2 children'
                     },
                     7: {
-                        text: ' '
+                        text: 'about 160 euro'
                     }
                 }
             },
@@ -479,7 +482,7 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                         text: 'Test Engineer'
                     },
                     6: {
-                        text: 'Yes'
+                        text: ' '
                     },
                     7: {
                         text: '20 euro incl VAT'
@@ -515,6 +518,9 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                     },
                     2: {
                         text: '3.5 years before i.materialise'
+                    },
+                    8: {
+                        text: ' '
                     }
                 }
             },
@@ -591,6 +597,9 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                     },
                     4: {
                         text: ' '
+                    },
+                    6: {
+                        text: ' '
                     }
                 }
             },
@@ -621,10 +630,29 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                 filters: {
                     0: {
                         text: 'Community Manager'
+                    },
+                    5: {
+                        text: ' '
+                    },
+                    7: {
+                        text: '30 euro'
+                    },
+                    8: {
+                        text: ' '
                     }
                 }
             },
+        {
+                id: 30,
+                name: 'Roman Krutko',
+                image: 'img/team_photos/Roma.jpg',
+                filters: {
+                    0: {
+                        text: 'Department Manager'
+                    }
 
+                }
+        }
 
         ]
     }

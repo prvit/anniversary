@@ -2,6 +2,12 @@
 @import "components/styles-reset";
 @import "components/UI-kit-mixins";
 
+html, body {
+    font-family: 'Droid Serif', serif;
+    font-size: 20px;
+    color: #5e6a71;
+}
+
 .section-wrapper {
   width: 1200px;
   .box-sizing(border-box);
@@ -24,12 +30,14 @@
     color: #005a8b;
   }
   h2 {
-    font-size: 38px;
+    font-size: 60px;
     padding-bottom: 10px;
+    font-family: Oswald;
   }
   .we-change-world {
     font-size: 26px;
     padding-bottom: 140px;
+    text-transform:uppercase;
   }
   .logo-inner {}
 }
@@ -63,11 +71,24 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 2;
+  .hi {
+      padding-bottom:22px;
+      font-style:italic;
+  }
+  .section-title {
+      margin:0 0 22px;
+      text-align:center;
+      width:100%;
+  }
+  .note {
+      font-style:italic;
+      font-size:16px;
+  }
 }
 
 .s-idea-description-inner {
   text-align: center;
-  padding: 20px 10%;
+  padding: 60px 10%;
   font-size: 20px;
   line-height: 1.2;
 }
@@ -75,21 +96,36 @@
 .s-team-years {
   background: #f6f8e0;
   padding: 70px 0;
+  .section-title {
+    text-align: left;
+    padding-top: 80px;
+  }
 }
 
-.section-title {
+/*.section-title {
   text-align: center;
   font-size: 26px;
   font-weight: 600;
   margin: 0 auto 80px;
   width: 60%;
+}*/
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0 auto 80px;
+    width: 60%;
+    color: #5e6a71;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.2;
+    text-transform: uppercase;
 }
 
 
 .b-team-years-chat {
   background: url("../img/team-years-chat.png") center left no-repeat;
   padding-left: 500px;
-  min-height: 300px;
+  min-height: 380px;
   margin: 30px 0;
   text-align: left;
 }
@@ -100,6 +136,17 @@
   min-height: 300px;
   margin: 30px 0;
   text-align: right;
+  img {
+    position: relative;
+    top: 9px;
+  }
+  .legend {
+    text-align: center;
+    font-family: Oswald,sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-top: 60px;
+  }
 }
 
 .s-team-families {
@@ -131,6 +178,8 @@
   }
   .vs {
     font-size: 40px;
+    font-family: Oswald, sans-serif ;
+    font-weight:100;
   }
   .children-1,
   .children-2 {
@@ -164,6 +213,12 @@
   .col {
     display: inline-block;
   }
+  .banner {
+      padding-right: 80px;
+  }
+  .photo {
+      padding-left:80px;
+  }
   .sentence {
     font-size: 30px;
     font-style: italic;
@@ -180,30 +235,122 @@
   background: url("../img/devices-bg.jpg") left center no-repeat;
   padding-left: 360px;
   min-height: 300px;
+  .section-title {
+    color: white;
+  }
 }
 
 .s-rendering {
-  background: #42433e;
+  background: #434240;
   min-height: 80px;
   padding: 70px 0;
+
+  &, .section-title {
+     color:#e3e3e3;
+     text-align:center;
+  }
+  .rendering-bg {
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+  .rendering1-bg {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  .section-title {
+      padding-top: 60px;
+      margin-bottom: 60px;
+    white-space: nowrap;
+  }
 }
 .s-rendering-inner {
-  background: url("../img/rendering-bg.jpg") left center no-repeat;
-  padding-left: 360px;
-  min-height: 450px;
+  position: relative;
+  padding: 0 300px 100px;
+    min-height: 450px;
+  a {
+    color: #e3e3e3;
+  }
+  .bert {
+    padding: 20px 0 40px;
+  }
+  .kudos {
+    font-size: 40px;
+    margin-top: 22px;
+    font-family: Oswald,sans-serif;
+    font-weight: 100;
+  }
 }
+
+
 
 .s-investment {
   background: url("../img/sell-bg.jpg") center bottom repeat-x #3ab6da;
-  height: 630px;
-  padding: 0 0 70px;
+  height: 528px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) inset;
+  
+  &, .section-title {
+     color:white;
+     text-align:left;
+  }
+  .section-title {
+      padding-top: 60px;
+      margin:0 0 60px;
+  }
+  .kudos {
+    font-size: 40px;
+    margin-top: 122px;
+    font-family: Oswald,sans-serif;
+    font-weight: 100;
+  }
 }
 .s-investment-inner {
-  background: url("../img/sell-banner.jpg") right 74px no-repeat;
-  padding-right: 360px;
+  background: url("../img/sell-banner.png") right 5px no-repeat;
+  padding-right: 660px;
   height: 100%;
 }
+
+
+.s-congrats {
+  background: url("../img/congrats-bg.jpg") center bottom repeat-x #ffcc4d;
+  height: 700px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) inset;
+  padding-top: 60px;
+  
+  &, .section-title {
+     color:white;
+  }
+  .franky {
+    font-size: 40px;
+    margin-top: 150px;
+    font-family: Oswald,sans-serif;
+    font-weight: 100;
+    width: 250px;
+  }
+  .ruzhena {
+    font-size: 40px;
+    margin-top: 150px;
+    font-family: Oswald,sans-serif;
+    font-weight: 100;
+    float: left;    
+    width: 250px;
+  }
+    .karen {
+    font-size: 40px;
+    margin-top: 150px;
+    font-family: Oswald,sans-serif;
+    font-weight: 100;
+    float: right;
+    width: 250px;
+    text-align: right;
+  }
+}
+.s-congrats-inner {
+  background: url("../img/congrats-banner.jpg") center bottom no-repeat;
+  height: 100%;
+}
+
 
 .s-rewards {
   padding: 70px 0 0;
@@ -234,6 +381,8 @@
       margin-top: 120px;
       width: 9%;
       font-size: 40px;
+      font-family: Oswald, sans-serif ;
+      font-weight:100;
       &.empty {
         margin: 0;
       }
