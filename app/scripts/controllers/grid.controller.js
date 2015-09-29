@@ -624,7 +624,7 @@ angular.module('anniversary').controller('GridController', function ($scope) {
                 }
             },
             {
-                id: 29,
+                id: 30,
                 name: 'Yui Takahara',
                 image: 'img/team_photos/Yui.jpg',
                 filters: {
